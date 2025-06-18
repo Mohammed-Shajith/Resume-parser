@@ -1,5 +1,5 @@
 import re
-import fitz  # PyMuPDF
+import fitz 
 import unicodedata
 from datetime import datetime
 
