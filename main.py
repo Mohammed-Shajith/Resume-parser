@@ -18,3 +18,4 @@ if __name__ == "__main__":
     df = pd.DataFrame(data)
     df.to_csv("parsed_resumes.csv", index=False)
     print("Data saved to parsed_resumes.csv")
+    #this fill save the extracted detailes in a csv file (auto generated)
