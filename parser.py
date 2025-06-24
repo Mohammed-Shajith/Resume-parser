@@ -4,7 +4,7 @@ import unicodedata
 from datetime import datetime
 
 def clean_text(text):
-    """Cleans weird characters like Iâ€™m, â€“ etc."""
+    """Cleans weird characters in ouput like Iâ€™m, â€“ etc."""
     cleaned = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode("ascii")
     cleaned = cleaned.replace("Iâm", "I'm").replace("Iâ€™m", "I'm")
     cleaned = cleaned.replace("â€™", "'").replace("â€œ", '"').replace("â€", '"')
